@@ -1,0 +1,47 @@
+// Mixins
+@mixin flex-center-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-center-column {
+    display: flex;
+    direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+// Colors 👀
+// Red
+$primaryOne: #720300;
+$primaryTwo: #880400;
+$primaryThree: #a80600;
+$primaryFour: #e20c00;
+$primaryFive: #ff0f00;
+$primarySix: #ff2400;
+$primarySeven: #ff4a2a;
+$primaryEight: #ff755e;
+$primaryNine: #ffa190;
+
+// Blue
+$accemtOne: #030568;
+$accemtTwo: #060497;
+$accemtThree: #0801bf;
+$accemtFour: #0b00d9;
+$accemtFive: #0d00fe;
+$accemtSix: #2529ff;
+$accemtSeven: #424aff;
+$accemtEight: #6b71ff;
+$accemtNine: #a0a6ff;
+
+// Gray
+$grayscale: #000000;
+$grayscale: #212121;
+$grayscale: #333333;
+$grayscale: #434343;
+$grayscale: #656565;
+$grayscale: #999999;
+$grayscale: #c4c4c4;
+$grayscale: #d9d9d9;
+$grayscale: #efefef;
