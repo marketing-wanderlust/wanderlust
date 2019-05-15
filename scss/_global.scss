@@ -146,8 +146,8 @@ table {
 html,
 body {
     font-size: 62.5%;
-    font-family: '';
-    background: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    background: $grayscaleNine;
     margin: 0 auto;
     height: 0 auto;
 }
@@ -157,7 +157,8 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: '';
+    font-family: 'Roboto', sans-serif;
+
 }
 
 h1 {
@@ -181,7 +182,7 @@ p {
 }
 
 hr {
-    border-color: black;
+    border-color: $grayscaleThree;
     border-width: 1px;
     border-style: ridge;
     margin: 1rem 0;
