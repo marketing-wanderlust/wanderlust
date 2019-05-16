@@ -4,7 +4,7 @@
     @include flex-center-column();
     bottom: 0;
     height: 20rem;
-    background-color: $grayscaleFour;
+    background-color: $grayscaleTwo;
     border-top: 2px solid $grayscaleNine;
 
     a {
@@ -21,14 +21,16 @@
 
             h4,
             a {
-                font-size: 2rem;
-                color: $grayscaleSeven;
+                font-size: 1.5rem;
+                color: $grayscaleSix;
                 line-height: 2.5rem;
             }
 
             h4 {
+                font-size: 2rem;
                 text-decoration: underline;
                 margin-bottom: -0.5rem;
+                color: $grayscaleEight;
             }
         }
 
