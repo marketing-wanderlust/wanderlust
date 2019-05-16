@@ -1,8 +1,63 @@
 @import 'variables';
 
 .footer-container {
-    @include flex-center-row();
+    @include flex-center-column();
     bottom: 0;
-    height: 10rem;
+    height: 20rem;
     background-color: $grayscaleFour;
+    border-top: 2px solid $grayscaleNine;
+
+    a {
+        text-decoration: none;
+        color: $grayscaleSix;
+    }
+
+    .footer-top {
+        @include flex-center-row();
+        justify-content: space-evenly;
+
+        .footer-colsec {
+            @include flex-center-column();
+
+            h4,
+            a {
+                font-size: 2rem;
+                color: $grayscaleSeven;
+                line-height: 2.5rem;
+            }
+
+            h4 {
+                text-decoration: underline;
+                margin-bottom: -0.5rem;
+            }
+        }
+
+        .socials {
+            align-self: flex-start;
+
+            .cooperatepls {
+                display: flex;
+            }
+
+            i {
+                margin: 0rem 1rem;
+            }
+        }
+    }
+
+    .minilinks {
+        margin: 2rem 0;
+        text-align: center;
+
+        a {
+            margin: 0 1rem;
+            font-size: 1.5rem;
+        }
+    }
+
+    .merica {
+        text-align: center;
+        font-size: 1.5rem;
+        color: $grayscaleEight;
+    }
 }

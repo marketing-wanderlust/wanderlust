@@ -7,7 +7,7 @@
 
 @mixin flex-center-column {
     display: flex;
-    direction: column;
+    flex-flow: column nowrap;
     justify-content: center;
     align-content: center;
 }
