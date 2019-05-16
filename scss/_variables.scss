@@ -12,6 +12,10 @@
     align-content: center;
 }
 
+@mixin easeOut {
+    transition: all 400ms ease-in-out;
+}
+
 // Colors 👀
 // Red
 $primaryOne: #720300;
