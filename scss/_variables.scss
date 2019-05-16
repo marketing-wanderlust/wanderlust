@@ -7,9 +7,13 @@
 
 @mixin flex-center-column {
     display: flex;
-    direction: column;
+    flex-flow: column nowrap;
     justify-content: center;
     align-content: center;
+}
+
+@mixin easeOut {
+    transition: all 400ms ease-in-out;
 }
 
 // Colors 👀
