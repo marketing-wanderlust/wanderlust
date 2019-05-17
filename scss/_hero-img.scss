@@ -1,0 +1,32 @@
+.CTA {
+    @include flex-center-row();
+
+    .CTA-img {
+        width: 50%;
+    }
+
+    .CTA-text {
+        text-align: center;
+        padding: 2rem;
+
+        h1 {
+            font-size: 8rem;
+            color: $primaryThree;
+        }
+
+        h2 {
+            font-size: 4rem;
+            color: $primaryTwo;
+        }
+
+        p {
+            font-size: 2rem;
+            color: $grayscaleFive;
+        }
+
+        i {
+            font-size: 10rem;
+            color: $accemtThree;
+        }
+    }
+}
