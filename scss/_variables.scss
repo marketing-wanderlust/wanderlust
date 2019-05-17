@@ -12,8 +12,8 @@
     align-content: center;
 }
 
-@mixin easeOut {
-    transition: all 400ms ease-in-out;
+@mixin easeInOut($time: 400ms) {
+    transition: all $time ease-in-out;
 }
 
 // Colors 👀
