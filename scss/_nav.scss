@@ -1,0 +1,130 @@
+.menu-btn {
+  display: none;
+}
+
+.navbar {
+  background-color: transparent;
+  z-index: 1;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+    color: $primaryFour;
+
+    &:hover {
+      color: $primaryTwo;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: $grayscaleFour;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
+    }
+
+    &:hover:before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+  }
+}
+
+nav {
+  width: 40%;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+
+  a {
+    font-size: $text-5;
+  }
+}
+
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: $grayscaleTwo;
+    height: 100%;
+    width: 100%;
+    transform: translate3d(100%, 0, 0);
+    @include easeInOut(500ms);
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  nav > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 80px;
+  }
+
+  li {
+    margin-bottom: 20px;
+  }
+  .menu-btn {
+    display: initial;
+    position: absolute;
+    z-index: 2;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+
+    @include easeInOut;
+
+    .menu-btn-line {
+      background-color: $grayscaleFour;
+      height: 4px;
+      width: 30px;
+      margin-bottom: 4px;
+      @include easeInOut;
+    }
+
+    // Roatate into X with menu lines
+    &.close {
+      transform: rotate(180deg);
+
+      .menu-btn-line {
+        background-color: $grayscaleSeven;
+        // Line 1 - Rotate
+        &:nth-child(1) {
+          transform: rotate(45deg) translate3d(10px, 10px, 0);
+        }
+
+        // Line 2 - Hide
+        &:nth-child(2) {
+          opacity: 0;
+        }
+
+        // Line 3 - Rotate
+        &:nth-child(3) {
+          transform: rotate(-45deg) translate3d(2px, -1px, 0);
+        }
+      }
+    }
+  }
+}

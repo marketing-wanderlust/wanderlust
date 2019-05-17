@@ -162,16 +162,21 @@ h5 {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: $text-9;
 }
 
 h2 {
-    font-size: 3.2rem;
+    font-size: $text-7;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: $text-6;
     padding-bottom: 10px;
 }
 
 h4 {
-    font-size: 2.5rem;
+    font-size: $text-5;
     padding-bottom: 10px;
 }
 
