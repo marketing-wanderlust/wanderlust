@@ -6,14 +6,30 @@
 
     .appomode-text {
         h1 {
-            font-size: 5rem;
+            font-size: 6rem;
             color: $grayscaleNine;
+        }
+
+        .getstarted {
+            margin-top: 3rem;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10rem;
+            cursor: pointer;
+            transition: 0.3s all cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            padding: 1.7rem 4.8rem 1.5rem;
+            color: $grayscaleOne;
+            background-color: $grayscaleNine;
+            border: 0.2rem solid $grayscaleEight;
         }
     }
 }
 
 .CTA {
     @include flex-center-row();
+    margin: 3rem 0;
 
     .CTA-img {
         width: 50%;
