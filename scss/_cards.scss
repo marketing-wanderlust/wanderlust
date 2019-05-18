@@ -1,14 +1,30 @@
 .cards {
     @include flex-center-row();
-
-    .visit-img {
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
+    justify-content: space-around;
 
     .visit-card {
+        width: 30%;
         border: 0.25rem solid $grayscaleOne;
-        margin: 2rem;
 
+        .visit-img {
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .visit-title {
+            margin-top: 2rem;
+            padding: 0 1rem 0;
+
+            h2 {
+                font-size: 3rem;
+                color: $primaryTwo;
+            }
+        }
+
+        .visit-desc {
+            padding: 0 1rem 0;
+        }
     }
 }
