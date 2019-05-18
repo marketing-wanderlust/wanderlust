@@ -16,7 +16,7 @@ class Carousel {
 
   scrollImage() {
     setInterval(() => {
-      this.leftClick();
+      this.rightClick();
     }, 5000);
   }
 
@@ -54,15 +54,8 @@ class Carousel {
 
     // set the transition point based on the direction that the images
     // are supposed to be going
-    let newImageTransition;
-    let oldImageTransition;
-    if (direction === "left") {
-      newImageTransition = -100;
-      oldImageTransition = 100;
-    } else {
-      newImageTransition = 100;
-      oldImageTransition = -100;
-    }
+    const [newImageTransition, oldImageTransition] =
+      direction === "left" ? [100, -100] : [-100, 100];
 
     // 1) Start the transition out of the old image
     // and make sure the newImage starts at 0 opacity
