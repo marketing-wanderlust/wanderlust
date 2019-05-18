@@ -1,0 +1,41 @@
+.cards-title {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    h1 {
+        font-size: 5rem;
+        color: $primaryFour;
+        font-family: 'Poppins', sans-serif;
+    }
+}
+
+.cards {
+    @include flex-center-row();
+    justify-content: space-around;
+
+    .visit-card {
+        width: 30%;
+        border: 0.25rem solid $grayscaleSix;
+
+        .visit-img {
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .visit-title {
+            margin-top: 2rem;
+            padding: 0 1rem 0;
+
+            h2 {
+                font-size: 3rem;
+                color: $primaryTwo;
+            }
+        }
+
+        .visit-desc {
+            padding: 0 1rem 0;
+        }
+    }
+}
