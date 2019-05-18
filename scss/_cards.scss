@@ -1,10 +1,21 @@
+.cards-title {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    h1 {
+        font-size: 5rem;
+        color: $primaryFour;
+        font-family: 'Poppins', sans-serif;
+    }
+}
+
 .cards {
     @include flex-center-row();
     justify-content: space-around;
 
     .visit-card {
         width: 30%;
-        border: 0.25rem solid $grayscaleOne;
+        border: 0.25rem solid $grayscaleSix;
 
         .visit-img {
 
