@@ -1,0 +1,14 @@
+.cards {
+    @include flex-center-row();
+
+    .visit-img {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .visit-card {
+        border: 0.25rem solid $grayscaleOne;
+        margin: 2rem;
+
+    }
+}

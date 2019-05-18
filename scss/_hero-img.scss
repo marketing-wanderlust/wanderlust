@@ -18,9 +18,9 @@
             text-decoration: none;
             border-radius: 10rem;
             cursor: pointer;
-            transition: 1s all cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            transition: 0.4s all cubic-bezier(0.215, 0.610, 0.355, 1.000);
             padding: 1.7rem 4.8rem 1.5rem;
-            color: $grayscaleOne;
+            color: $grayscaleFive;
             background-color: $grayscaleNine;
             border: 0.2rem solid $grayscaleEight;
         }
