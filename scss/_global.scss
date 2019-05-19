@@ -1,4 +1,4 @@
-@import 'variables';
+@import "variables";
 
 // Is this working?
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -87,12 +87,12 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -107,49 +107,49 @@ hgroup,
 menu,
 nav,
 section {
-    display: block;
+  display: block;
 }
 
 body {
-    line-height: 1;
+  line-height: 1;
 }
 
 ol,
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 blockquote,
 q {
-    quotes: none;
+  quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: "";
-    content: none;
+  content: "";
+  content: none;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Global Settings */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
 body {
-    font-size: 62.5%;
-    font-family: 'Poppins', sans-serif;
-    background: $grayscaleNine;
-    margin: 0 auto;
-    height: 0 auto;
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  background: $grayscaleNine;
+  margin: 0 auto;
+  height: 0 auto;
 }
 
 h1,
@@ -157,38 +157,37 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: 'Roboto', sans-serif;
-
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
-    font-size: $text-9;
+  font-size: $text-9;
 }
 
 h2 {
-    font-size: $text-7;
-    padding-bottom: 10px;
+  font-size: $text-7;
+  padding-bottom: 10px;
 }
 
 h2 {
-    font-size: $text-6;
-    padding-bottom: 10px;
+  font-size: $text-6;
+  padding-bottom: 10px;
 }
 
 h4 {
-    font-size: $text-5;
-    padding-bottom: 10px;
+  font-size: $text-5;
+  padding-bottom: 10px;
 }
 
 p {
-    line-height: 1.5;
-    font-size: 1.6rem;
-    padding-bottom: 10px;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
 }
 
 hr {
-    border-color: $grayscaleNine;
-    border-width: 1px;
-    border-style: ridge;
-    margin: 1rem 0;
+  border-color: $grayscaleNine;
+  border-width: 1px;
+  border-style: ridge;
+  margin: 1rem 0;
 }
