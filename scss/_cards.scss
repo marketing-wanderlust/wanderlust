@@ -1,41 +1,47 @@
-.cards-title {
-    text-align: center;
-    margin-bottom: 2rem;
+.cards-container {
+    width: 1000px;
+    @include flex-center-column();
 
-    h1 {
-        font-size: 5rem;
-        color: $primaryFour;
-        font-family: 'Poppins', sans-serif;
+    .cards-title {
+        text-align: center;
+        margin: 4rem 0;
+
+        h1 {
+            font-size: 5rem;
+            color: $primaryFour;
+            font-family: 'Poppins', sans-serif;
+        }
     }
-}
 
-.cards {
-    @include flex-center-row();
-    justify-content: space-around;
+    .cards {
+        @include flex-center-row();
+        justify-content: space-around;
+        margin-bottom: 4rem;
 
-    .visit-card {
-        width: 30%;
-        border: 0.25rem solid $grayscaleSix;
+        .visit-card {
+            width: 30%;
+            border: 0.25rem solid $grayscaleSix;
 
-        .visit-img {
+            .visit-img {
 
-            img {
-                width: 100%;
+                img {
+                    width: 100%;
+                }
             }
-        }
 
-        .visit-title {
-            margin-top: 2rem;
-            padding: 0 1rem 0;
+            .visit-title {
+                margin-top: 2rem;
+                padding: 0 1rem 0;
 
-            h2 {
-                font-size: 3rem;
-                color: $primaryTwo;
+                h2 {
+                    font-size: 3rem;
+                    color: $primaryTwo;
+                }
             }
-        }
 
-        .visit-desc {
-            padding: 0 1rem 0;
+            .visit-desc {
+                padding: 0 1rem 0;
+            }
         }
     }
 }

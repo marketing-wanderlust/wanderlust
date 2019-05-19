@@ -29,40 +29,44 @@
     .iphone {}
 }
 
-.CTA {
-    @include flex-center-row();
-    margin: 3rem 0 0;
+.CTA-container {
+    width: 1000px;
 
-    .CTA-img {
-        width: 50%;
-    }
+    .CTA {
+        @include flex-center-row();
+        margin: 3rem 0 0;
 
-    .CTA-text {
-        text-align: center;
-        padding: 2rem;
-
-        h1 {
-            font-size: 8rem;
-            color: $primaryFour;
+        .CTA-img {
+            width: 50%;
         }
 
-        h2 {
-            font-size: 4rem;
-            color: $accentOne;
-        }
+        .CTA-text {
+            text-align: center;
+            padding: 2rem;
 
-        p {
-            font-size: 2rem;
-            color: $grayscaleSix;
-        }
+            h1 {
+                font-size: 8rem;
+                color: $primaryFour;
+            }
 
-        i {
-            font-size: 10rem;
-        }
+            h2 {
+                font-size: 4rem;
+                color: $accentOne;
+            }
 
-        .climbingUSA {
-            width: 30%;
-            margin-top: -4rem;
+            p {
+                font-size: 2rem;
+                color: $grayscaleSix;
+            }
+
+            i {
+                font-size: 10rem;
+            }
+
+            .climbingUSA {
+                width: 30%;
+                margin-top: -4rem;
+            }
         }
     }
 }
