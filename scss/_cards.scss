@@ -2,6 +2,7 @@
     width: 1000px;
     @include flex-center-column();
     flex-wrap: nowrap;
+    margin: 0 auto;
 
     .cards-title {
         text-align: center;
@@ -17,8 +18,8 @@
     .cards {
         @include flex-center-column();
         justify-content: space-around;
-        margin: 0 auto;
         margin-bottom: 4rem;
+        width: 100%;
 
         .visit-card {
             @include flex-center-row();
@@ -26,14 +27,14 @@
             margin: 2rem;
 
             .visit-img {
-
                 img {
                     width: 100%;
+                    border-radius: 8px;
                 }
             }
 
             .visit-content {
-                margin: 0rem 1rem;
+                margin: 0rem 10rem;
 
                 h2 {
                     font-size: 3rem;
