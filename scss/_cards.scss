@@ -1,5 +1,6 @@
 .cards-container {
-    width: 1000px;
+    max-width: 1000px;
+    width: 100%;
     @include flex-center-column();
     flex-wrap: nowrap;
     margin: 0 auto;
@@ -18,13 +19,14 @@
     .cards {
         @include flex-center-column();
         justify-content: space-around;
-        margin-bottom: 4rem;
         width: 100%;
+        margin-bottom: -4rem;
 
         .visit-card {
             @include flex-center-row();
             width: 100%;
             margin: 2rem;
+            margin-bottom: 8rem;
 
             .visit-img {
                 img {
@@ -34,7 +36,8 @@
             }
 
             .visit-content {
-                margin: 0rem 10rem;
+                margin: 0rem 5rem;
+                width: 20%;
 
                 h2 {
                     font-size: 3rem;
