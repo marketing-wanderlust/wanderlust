@@ -60,12 +60,12 @@
 
   .carousel-btn {
     font-size: $text-10;
-    color: white;
+    color: $grayscaleNine;
     transition: color 150ms ease-in-out;
     cursor: pointer;
 
     &:hover {
-      color: whitesmoke;
+      color: $grayscaleEight;
     }
   }
 
