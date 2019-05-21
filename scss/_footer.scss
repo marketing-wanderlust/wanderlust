@@ -1,64 +1,97 @@
-@import 'variables';
+@import "variables";
 
 .footer-container {
-    @include flex-center-column();
-    bottom: 0;
-    height: 20rem;
-    background-color: $grayscaleTwo;
+  @include flex-center-column();
+  bottom: 0;
+  height: 20rem;
+  background-color: $grayscaleTwo;
+
+  a {
+    text-decoration: none;
+    color: $grayscaleSix;
+  }
+
+  .footer-top {
+    @include flex-center-row();
+    justify-content: space-evenly;
+
+    .footer-colsec {
+      @include flex-center-column();
+
+      h4,
+      a {
+        font-size: 1.5rem;
+        color: $grayscaleSix;
+        line-height: 2.5rem;
+      }
+
+      h4 {
+        font-size: 2rem;
+        text-decoration: underline;
+        margin-bottom: -0.5rem;
+        color: $grayscaleEight;
+      }
+    }
+
+    .socials {
+      align-self: flex-start;
+
+      .cooperatepls {
+        display: flex;
+      }
+
+      i {
+        margin: 0rem 1rem;
+      }
+    }
+  }
+
+  .minilinks {
+    margin: 2rem 0;
+    text-align: center;
 
     a {
-        text-decoration: none;
-        color: $grayscaleSix;
+      margin: 0 1rem;
+      font-size: 1.25rem;
     }
+  }
 
-    .footer-top {
-        @include flex-center-row();
-        justify-content: space-evenly;
+  .merica {
+    text-align: center;
+    font-size: 1.15rem;
+    color: $grayscaleEight;
+  }
+}
 
-        .footer-colsec {
-            @include flex-center-column();
+@media (max-width: 500px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 30px 0;
+  }
 
-            h4,
-            a {
-                font-size: 1.5rem;
-                color: $grayscaleSix;
-                line-height: 2.5rem;
-            }
+  .footer-top {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 
-            h4 {
-                font-size: 2rem;
-                text-decoration: underline;
-                margin-bottom: -0.5rem;
-                color: $grayscaleEight;
-            }
-        }
+  .footer-logo {
+    display: none;
+  }
 
-        .socials {
-            align-self: flex-start;
+  .footer-colsec {
+    width: 40%;
+    margin: 10px 5px;
+  }
 
-            .cooperatepls {
-                display: flex;
-            }
+  .footer-colsec:nth-child(2) {
+    margin: 10px 0;
+  }
 
-            i {
-                margin: 0rem 1rem;
-            }
-        }
-    }
-
-    .minilinks {
-        margin: 2rem 0;
-        text-align: center;
-
-        a {
-            margin: 0 1rem;
-            font-size: 1.25rem;
-        }
-    }
-
-    .merica {
-        text-align: center;
-        font-size: 1.15rem;
-        color: $grayscaleEight;
-    }
+  .socials {
+    margin: 20px 0;
+  }
 }
