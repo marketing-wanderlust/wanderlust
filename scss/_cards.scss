@@ -1,6 +1,10 @@
 .cards-container {
-    width: 1000px;
+    max-width: 1000px;
+    width: 100%;
+
     @include flex-center-column();
+    flex-wrap: nowrap;
+    margin: 0 auto;
 
     .cards-title {
         text-align: center;
@@ -14,33 +18,33 @@
     }
 
     .cards {
-        @include flex-center-row();
+        @include flex-center-column();
         justify-content: space-around;
-        margin-bottom: 4rem;
+        width: 100%;
+        margin-bottom: -4rem;
 
         .visit-card {
-            width: 30%;
-            border: 0.25rem solid $grayscaleSix;
+            @include flex-center-row();
+            width: 100%;
+            margin: 2rem;
+            margin-bottom: 8rem;
 
             .visit-img {
-
                 img {
                     width: 100%;
+                    height: 100%;
+                    border-radius: 8px;
                 }
             }
 
-            .visit-title {
-                margin-top: 2rem;
-                padding: 0 1rem 0;
+            .visit-content {
+                margin: 0rem 5rem;
+                width: 20%;
 
                 h2 {
                     font-size: 3rem;
                     color: $primaryTwo;
                 }
-            }
-
-            .visit-desc {
-                padding: 0 1rem 0;
             }
         }
     }

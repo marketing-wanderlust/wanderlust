@@ -1,5 +1,6 @@
 .appomode {
     @include flex-center-row();
+    width: 100%;
     text-align: center;
     background-color: $primaryThree;
     margin: 1rem 0 3rem;
@@ -26,46 +27,72 @@
         }
     }
 
-    .iphone {}
+    @media (max-width: 500px) {
+        .appomode-text {
+            h1 {
+                font-size: 3rem;
+            }
+
+            .getstarted {
+                padding: 0 auto;
+                padding: 1.7rem 8rem 1.7rem;
+                font-size: 2rem;
+            }
+        }
+
+        .iphone {
+            width: 80%;
+        }
+    }
 }
 
 .CTA-container {
-    width: 1000px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
 
     .CTA {
         @include flex-center-row();
         margin: 3rem 0 0;
 
         .CTA-img {
-            width: 50%;
+            width: 100%;
         }
 
         .CTA-text {
             text-align: center;
-            padding: 2rem;
+            width: 100%;
+            margin-left: -20rem;
 
             h1 {
-                font-size: 8rem;
+                font-size: 7rem;
                 color: $primaryFour;
             }
 
             h2 {
-                font-size: 4rem;
+                font-size: 3rem;
                 color: $accentOne;
             }
 
             p {
-                font-size: 2rem;
+                font-size: 1.5rem;
                 color: $grayscaleSix;
             }
 
-            i {
-                font-size: 10rem;
-            }
-
             .climbingUSA {
-                width: 30%;
-                margin-top: -4rem;
+                width: 100%;
+                margin-top: -2rem;
+            }
+        }
+
+        @media (max-width: 500px) {
+            @include flex-center-column();
+            flex-flow: column-reverse;
+
+            .cta-text {
+                .climbingUSA {
+                    width: 50%
+                }
             }
         }
     }
