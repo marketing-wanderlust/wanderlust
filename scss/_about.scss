@@ -3,8 +3,9 @@
     @include flex-center-column();
 
     h1 {
-        font-size: 5rem;
+        font-size: 4rem;
         text-decoration: underline;
+        color: $grayscaleFour;
     }
 
     h2 {
@@ -15,22 +16,26 @@
 
     .dev-card {
         @include flex-center-row();
-        justify-content: space-around;
-    }
 
-    .dev-picture {
-        @include flex-center-row();
-
-        img {
-            max-height: 200px;
-            max-width: 200px;
-            height: 100%;
-            width: 100%;
-            border-radius: 8px;
+        .dev-text {
+            margin-left: 2rem;
         }
 
-        i {
-            margin: -16rem 0 0 -4rem;
+
+        .dev-picture {
+            @include flex-center-row();
+
+            img {
+                max-height: 200px;
+                max-width: 200px;
+                height: 100%;
+                width: 100%;
+                border-radius: 8px;
+            }
+
+            i {
+                margin: -16rem 0 0 -4rem;
+            }
         }
     }
 }
