@@ -60,12 +60,12 @@
 
   .carousel-btn {
     font-size: $text-10;
-    color: white;
+    color: $grayscaleNine;
     transition: color 150ms ease-in-out;
     cursor: pointer;
 
     &:hover {
-      color: whitesmoke;
+      color: $grayscaleEight;
     }
   }
 
@@ -102,7 +102,9 @@
       }
 
       img {
-        min-height: 400px;
+        max-height: 400px;
+        height: 100%;
+        width: auto;
       }
 
       h3 {
