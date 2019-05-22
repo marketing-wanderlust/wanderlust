@@ -6,7 +6,7 @@ class Carousel {
     this.images = this.element.querySelectorAll(".carousel-card");
     this.selectedIndex = 0;
 
-    this.selectImage("left", this.selectedIndex, this.images.length - 1);
+    this.selectImage("right", this.selectedIndex, this.images.length - 1);
 
     this.leftBtn.addEventListener("click", () => this.leftClick());
     this.rightBtn.addEventListener("click", () => this.rightClick());
