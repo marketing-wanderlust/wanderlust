@@ -1,0 +1,58 @@
+main.get-started-page {
+  max-width: 1000px;
+  margin: 150px auto 80px auto;
+
+  h1 {
+    text-align: center;
+    color: $grayscaleTwo;
+  }
+}
+
+.form-area {
+  background-color: white;
+  padding: 50px 0;
+  border-radius: 12px;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.get-started-form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+
+  label {
+    font-size: $text-6;
+    margin: 10px 0;
+  }
+
+  select {
+    margin-bottom: 10px;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  select {
+    border-radius: 8px;
+    padding: 15px 20px;
+    border: 1px solid $grayscaleEight;
+  }
+
+  button[type="submit"] {
+    margin-top: 30px;
+    align-self: center;
+    background-color: $primaryFive;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: $text-5;
+    width: 200px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 150ms ease-in-out;
+
+    &:hover {
+      background-color: $primaryThree;
+    }
+  }
+}
