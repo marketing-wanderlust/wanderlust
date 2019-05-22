@@ -56,3 +56,19 @@ main.get-started-page {
     }
   }
 }
+
+@media (max-width: 500px) {
+  main.get-started-page {
+    max-width: 1000px;
+    margin-top: 20px;
+
+    h1 {
+      margin-bottom: 30px;
+    }
+  }
+
+  .form-area {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
