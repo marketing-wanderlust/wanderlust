@@ -4,6 +4,10 @@
   width: 100%;
   margin: 150px auto 100px auto;
 
+  .about-title {
+    text-align: center;
+  }
+
   h1 {
     font-size: 4rem;
     text-decoration: underline;
@@ -25,6 +29,9 @@
 
   .dev-card {
     @include flex-center-row();
+
+    width: 95%;
+    margin: 10px auto;
 
     .dev-text {
       padding: 0rem 10rem;
@@ -56,9 +63,9 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .about-container {
-    margin-top: 40px;
+    margin-top: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,5 +77,11 @@
     .dev-card:nth-child(3) {
       flex-direction: column-reverse;
     }
+  }
+}
+
+@media (max-width: 500px) {
+  .about-container {
+    margin-top: 40px;
   }
 }
