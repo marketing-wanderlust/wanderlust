@@ -88,23 +88,25 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .appomode {
-    padding: 75px 0 0 0;
-    display: flex;
-    flex-direction: column;
+    padding: 80px 0 0 80px;
   }
-}
-
-@media (max-width: 500px) {
   .CTA-container {
     .CTA {
       display: flex;
       flex-direction: column-reverse;
       width: 100%;
 
+      .CTA-img {
+        width: 50%;
+      }
+
       .CTA-text {
         margin: 0;
+        .climbingUSA {
+          width: 50%;
+        }
         h1 {
           font-size: $text-9;
         }
@@ -119,5 +121,13 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 500px) {
+  .appomode {
+    padding: 75px 0 0 0;
+    display: flex;
+    flex-direction: column;
   }
 }
