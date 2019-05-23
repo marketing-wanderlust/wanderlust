@@ -56,6 +56,18 @@
   }
 }
 
+@media (max-width: 800px) {
+  .about-container {
+    .about-title {
+      text-align: center;
+    }
+  }
+  .dev-card {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+
 @media (max-width: 500px) {
   .about-container {
     margin-top: 40px;
