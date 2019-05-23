@@ -4,6 +4,7 @@
   text-align: center;
   background-color: $primaryThree;
   margin: 1rem 0 3rem;
+  padding-left: 10%;
 
   .appomode-text {
     h1 {
@@ -72,9 +73,6 @@
 }
 
 @media (max-width: 800px) {
-  .appomode {
-    padding: 80px 0 0 80px;
-  }
   .CTA-container {
     .CTA {
       display: flex;
