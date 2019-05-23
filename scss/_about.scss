@@ -4,6 +4,10 @@
   width: 100%;
   margin: 150px auto 100px auto;
 
+  .about-title {
+    text-align: center;
+  }
+
   h1 {
     font-size: 4rem;
     text-decoration: underline;
@@ -25,6 +29,9 @@
 
   .dev-card {
     @include flex-center-row();
+
+    width: 95%;
+    margin: 10px auto;
 
     .dev-text {
       padding: 0rem 10rem;
@@ -53,18 +60,6 @@
     p {
       margin-top: 1rem;
     }
-  }
-}
-
-@media (max-width: 800px) {
-  .about-container {
-    .about-title {
-      text-align: center;
-    }
-  }
-  .dev-card {
-    width: 90%;
-    margin: 10px auto;
   }
 }
 
