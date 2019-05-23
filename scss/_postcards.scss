@@ -3,10 +3,10 @@ $default-width: 100%;
 $default-min: 10%;
 
 .postcard-container {
+    max-width: 1000px;
     width: 100%;
-    height: 900px;
-    background-color: #fff;
-    padding: 50px 80px;
+    height: 500px;
+    margin: 0 auto;
 
     .postcard-stack {
         width: 500px;
