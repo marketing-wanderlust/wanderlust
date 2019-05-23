@@ -20,7 +20,7 @@
   .cards {
     @include flex-center-column();
     justify-content: space-around;
-    width: 100%;
+    width: 95%;
     margin-bottom: -4rem;
 
     .visit-card {
