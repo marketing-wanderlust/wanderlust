@@ -14,7 +14,7 @@
   justify-content: space-around;
   align-items: center;
 
-  a {
+  nav a {
     text-decoration: none;
     color: $grayscaleOne;
     position: relative;
@@ -30,7 +30,7 @@
       height: 2px;
       bottom: 0;
       left: 0;
-      background-color: $grayscaleThree;
+      background-color: $primarySeven;
       visibility: hidden;
       -webkit-transform: scaleX(0);
       transform: scaleX(0);
@@ -65,7 +65,14 @@ nav > ul {
   .navbar {
     position: relative;
     height: 80px;
+    nav a {
+      color: $grayscaleEight;
+      &:hover {
+        color: $grayscaleNine;
+      }
+    }
   }
+
   nav {
     display: flex;
     justify-content: center;
@@ -94,10 +101,6 @@ nav > ul {
 
   li {
     margin-bottom: 20px;
-  }
-
-  .navbar a {
-    color: $grayscaleEight;
   }
 
   .menu-btn {
