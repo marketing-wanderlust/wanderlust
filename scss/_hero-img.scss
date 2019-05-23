@@ -1,123 +1,124 @@
 .appomode {
-  @include flex-center-row();
-  width: 100%;
-  text-align: center;
-  background-color: $primaryThree;
-  margin: 1rem 0 3rem;
+    @include flex-center-row();
+    width: 100%;
+    text-align: center;
+    background-color: $primaryThree;
+    margin: 1rem 0 3rem;
 
-  .appomode-text {
-    h1 {
-      font-size: 6rem;
-      color: $grayscaleNine;
-    }
-
-    .getstarted {
-      margin-top: 3rem;
-      font-size: 1.4rem;
-      text-transform: uppercase;
-      text-align: center;
-      text-decoration: none;
-      border-radius: 10rem;
-      cursor: pointer;
-      transition: 0.4s all cubic-bezier(0.215, 0.61, 0.355, 1);
-      padding: 1.7rem 4.8rem 1.5rem;
-      color: $grayscaleFive;
-      background-color: $grayscaleNine;
-      border: 0.2rem solid $grayscaleEight;
-    }
-  }
-
-  @media (max-width: 500px) {
     .appomode-text {
-      h1 {
-        font-size: 3rem;
-      }
+        h1 {
+            font-size: 6rem;
+            color: $grayscaleNine;
+        }
 
-      .getstarted {
-        padding: 0 auto;
-        padding: 1.7rem 8rem 1.7rem;
-        font-size: 2rem;
-      }
+        .getstarted {
+            margin-top: 3rem;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10rem;
+            cursor: pointer;
+            transition: 0.4s all cubic-bezier(0.215, 0.61, 0.355, 1);
+            padding: 1.7rem 4.8rem 1.5rem;
+            color: $grayscaleFive;
+            background-color: $grayscaleNine;
+            border: 0.2rem solid $grayscaleEight;
+        }
     }
 
-    .iphone {
-      width: 80%;
-      margin-bottom: 0;
+    @media (max-width: 500px) {
+        .appomode-text {
+            h1 {
+                font-size: 3rem;
+            }
+
+            .getstarted {
+                padding: 0 auto;
+                padding: 1.7rem 8rem 1.7rem;
+                font-size: 2rem;
+            }
+        }
+
+        .iphone {
+            width: 80%;
+            margin-bottom: 0;
+        }
     }
-  }
 }
 
 .CTA-container {
-  max-width: 1000px;
-  width: 100%;
-  margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
 
-  .CTA {
-    @include flex-center-row();
-    margin: 3rem 0 0;
-
-    .CTA-img {
-      width: 100%;
-    }
-
-    .CTA-text {
-      text-align: center;
-      width: 100%;
-      margin-left: -20rem;
-
-      h1 {
-        font-size: 7rem;
-        color: $primaryFour;
-      }
-
-      h2 {
-        font-size: 3rem;
-        color: $accentOne;
-      }
-
-      p {
-        font-size: 1.5rem;
-        color: $grayscaleSix;
-      }
-
-      .climbingUSA {
-        width: 100%;
-        margin-top: -2rem;
-      }
-    }
-  }
-}
-
-@media (max-width: 500px) {
-  .appomode {
-    padding: 75px 0 0 0;
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 500px) {
-  .CTA-container {
     .CTA {
-      display: flex;
-      flex-direction: column-reverse;
-      width: 100%;
+        @include flex-center-row();
+        margin: 3rem 0 0;
 
-      .CTA-text {
-        margin: 0;
-        h1 {
-          font-size: $text-9;
+        .CTA-img {
+            width: 100%;
         }
 
-        h2 {
-          font-size: $text-7;
-        }
+        .CTA-text {
+            text-align: center;
+            width: 100%;
+            margin-left: -20rem;
 
-        p {
-          width: 80%;
-          margin: 0 auto;
+            h1 {
+                font-size: 7rem;
+                color: $primaryFour;
+            }
+
+            h2 {
+                font-size: 3rem;
+                color: $accentOne;
+            }
+
+            p {
+                font-size: 1.5rem;
+                color: $grayscaleSix;
+            }
+
+            .climbingUSA {
+                width: 100%;
+                margin-top: -2rem;
+            }
         }
-      }
     }
-  }
+}
+
+@media (max-width: 500px) {
+    .appomode {
+        padding: 75px 0 0 0;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    .CTA-container {
+        .CTA {
+            display: flex;
+            flex-direction: column-reverse;
+            width: 100%;
+
+            .CTA-text {
+                margin: 0;
+
+                h1 {
+                    font-size: $text-9;
+                }
+
+                h2 {
+                    font-size: $text-7;
+                }
+
+                p {
+                    width: 80%;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
 }
