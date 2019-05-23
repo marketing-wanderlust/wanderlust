@@ -21,13 +21,12 @@
     @include flex-center-column();
     justify-content: space-around;
     width: 95%;
-    margin-bottom: -4rem;
+    margin: 0 auto -4rem auto;
 
     .visit-card {
       @include flex-center-row();
       width: 100%;
-      margin: 2rem;
-      margin-bottom: 8rem;
+      margin: 2rem auto 8rem auto;
 
       .visit-img {
         img {
