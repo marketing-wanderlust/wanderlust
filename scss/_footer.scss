@@ -63,7 +63,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .footer-container {
     flex-direction: column;
     align-items: center;
@@ -84,7 +84,7 @@
 
   .footer-colsec {
     width: 40%;
-    margin: 10px 5px;
+    margin: 10px 0px;
   }
 
   .footer-colsec:nth-child(2) {
