@@ -1,6 +1,6 @@
 main.get-started-page {
   max-width: 1000px;
-  margin: 150px auto 80px auto;
+  margin: 80px auto;
 
   h1 {
     text-align: center;
@@ -66,9 +66,9 @@ main.get-started-page {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   main.get-started-page {
-    margin-top: 20px;
+    margin: 0 auto;
 
     h1 {
       margin-bottom: 30px;
