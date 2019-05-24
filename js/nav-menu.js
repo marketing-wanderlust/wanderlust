@@ -1,20 +1,27 @@
-const menuBtn = document.querySelector('.menu-btn');
-const navMenu = document.querySelector('.navbar nav');
+const menuBtn = document.querySelector(".menu-btn");
 
-menuBtn.addEventListener('click', toggleMenu);
+class SlidingNavMenu {
+  constructor(element) {
+    this.element = element;
+    this.navMenu = document.querySelector(".navbar nav");
+    this.isMenuOpen = false;
 
-let isMenuOpen = false;
+    this.element.addEventListener("click", () => this.toggleMenu());
+  }
 
-function toggleMenu() {
-    if (!isMenuOpen) {
-        menuBtn.classList.add('close');
-        navMenu.classList.add('show');
+  toggleMenu() {
+    if (!this.isMenuOpen) {
+      this.element.classList.add("close");
+      this.navMenu.classList.add("show");
 
-        isMenuOpen = true;
+      this.isMenuOpen = true;
     } else {
-        menuBtn.classList.remove('close');
-        navMenu.classList.remove('show');
+      this.element.classList.remove("close");
+      this.navMenu.classList.remove("show");
 
-        isMenuOpen = false;
+      this.isMenuOpen = false;
     }
+  }
 }
+
+const slidingNavMenu = new SlidingNavMenu(menuBtn);
