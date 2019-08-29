@@ -1,4 +1,5 @@
 ![Wanderlust logo](https://marketing-wanderlust.netlify.com/assets/Wanderlust.png)
+[Demo](https://marketing-wanderlust.netlify.com/)
 
 Wanderlust helps local tour guides of all types advertise their
 private/professional trips and experiences they offer. Take tours from
